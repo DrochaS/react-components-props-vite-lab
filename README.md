@@ -22,6 +22,49 @@ There is some starter code available in `src/components/App.js`. There is also
 some data in `data/blog.js` that is being imported into `App` so you can pass it
 down to the components that need it.
 
+## Getting Started
+
+### Prerequisites
+- Node.js (version 14 or higher)
+- npm or yarn
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/DrochaS/react-components-props-vite-lab.git
+   cd react-components-props-vite-lab
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running the Project
+1. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+2. Open your browser and navigate to `http://localhost:5173` to view the blog site.
+
+### Running Tests
+To run the test suite:
+```bash
+npm test
+```
+
+## Screenshots
+
+Here are some screenshots of the blog site:
+
+- [Screenshot 1: Full blog page](screenshots/blog-full.png)
+- [Screenshot 2: Header component](screenshots/header.png)
+- [Screenshot 3: About section](screenshots/about.png)
+- [Screenshot 4: Article list](screenshots/articles.png)
+
+*Note: Screenshots should be added to the `screenshots/` directory in the project root.*
+
 ## Deliverables
 
 Have a look at the components below and draw out a component hierarchy so you
