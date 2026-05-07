@@ -1,11 +1,14 @@
 import React from "react";
 
-// Header component displays the blog's title
-// Receives the blog name as a prop and renders it in an h1 element
-function Header({ name }) {
+function Header() {
   return (
     <header>
-      <h1>{name}</h1>
+      <h1>
+        Plantsy
+        <span className="logo" role="img">
+          🌱
+        </span>
+      </h1>
     </header>
   );
 }
