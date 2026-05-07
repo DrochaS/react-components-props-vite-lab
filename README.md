@@ -1,137 +1,57 @@
-# Putting it All Together: Components and Props
+# Plantsy
 
-## Learning Goals
+Welcome to **Plantsy**, your one-stop shop for all things green! This application allows you to manage a collection of plants, see what's in stock, and search for your favorites.
 
-- Create components that return JSX
-- Use props to make components dynamic
-- Transform lists of data into lists of components
+## Features
 
-## Overview
-
-Now that you've learned how to work with components in React, it's time to build
-something and put those skills to use! Your goal for this lab is to make a
-_static site_ in React to practice building components, writing JSX, and passing
-down data as props.
-
-We'll be creating a personal blog site, similar to
-[Dan Abramov's Overreacted](https://overreacted.io/):
-
-![demo](https://curriculum-content.s3.amazonaws.com/phase-2/react-hooks-component-props-mini-project/demo.png)
-
-There is some starter code available in `src/components/App.js`. There is also
-some data in `data/blog.js` that is being imported into `App` so you can pass it
-down to the components that need it.
+- **View Plants:** See all available plants on page load.
+- **Add New Plant:** Use the form to add a new plant to the collection.
+- **Stock Management:** Mark plants as "sold out" or "in stock".
+- **Search:** Filter plants by name to quickly find what you're looking for.
 
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js (version 14 or higher)
-- npm or yarn
+- npm
 
 ### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/DrochaS/react-components-props-vite-lab.git
-   cd react-components-props-vite-lab
-   ```
 
+1. Clone the repository.
 2. Install dependencies:
    ```bash
    npm install
    ```
 
 ### Running the Project
-1. Start the development server:
+
+1. Start the backend server:
+   ```bash
+   npm run server
+   ```
+   This will start a mock backend on `http://localhost:6001`.
+
+2. Start the development server:
    ```bash
    npm run dev
    ```
 
-2. Open your browser and navigate to `http://localhost:5173` to view the blog site.
+3. Open your browser and navigate to `http://localhost:5173`.
 
 ### Running Tests
+
 To run the test suite:
 ```bash
-npm test
+npm run test
 ```
 
-## Screenshots
+## Screenshot
 
-Here are some screenshots of the blog site:
+![Plantsy Screenshot](screenshots/plantsy-main.png)
 
-- [Screenshot 1: Full blog page](screenshots/blog-full.png)
-- [Screenshot 2: Header component](screenshots/header.png)
-- [Screenshot 3: About section](screenshots/about.png)
-- [Screenshot 4: Article list](screenshots/articles.png)
+## Implementation Details
 
-*Note: Screenshots should be added to the `screenshots/` directory in the project root.*
-
-## Deliverables
-
-Have a look at the components below and draw out a component hierarchy so you
-can determine how to pass data down as props.
-
-### Header
-
-Make a `Header` component as a child of `App`. It should return:
-
-- a `<header>` element with the following elements inside:
-  - an `<h1>` with the name of the blog, passed as a prop called `name`
-
-### About
-
-Make an `About` component as a child of `App`. It should return:
-
-- an `<aside>` element with the following elements inside:
-  - an `<img>` element, with the `src` set to an image passed as a prop called
-    `image`
-  - the `<img>` element should use this placeholder image as a _default value_
-    for the prop if no prop is passed in: "https://via.placeholder.com/215"
-  - the image should also be accessible! Give it an `alt` attribute of "blog
-    logo"
-  - a `<p>` element, with the text for the blog passed in as a prop called
-    `about`
-
-### ArticleList
-
-Make an `ArticleList` component as a child of `App`. It should return:
-
-- a `<main>` element with the following components inside:
-  - an array of `Article` components (one component for each of the `posts`
-    passed down as props to `ArticleList`)
-  - make sure to assign a unique `key` attribute to each `Article`
-
-### Article
-
-Make an `Article` component as a child of `ArticleList`. It should return:
-
-- an `<article>` element, with the following elements inside:
-  - an `<h3>` element displaying the title of the article, passed as a prop
-    called `title`
-  - a `<small>` element displaying the date of the article, passed as a prop
-    called `date`
-    - a _default value_ of "January 1, 1970" should be used if no date is passed
-      as a prop
-  - a `<p>` element displaying the preview of the article, passed as a prop
-    called `preview`
-
-### Bonus Feature: 'Minutes to Read'
-
-You'll notice in the original [Overreacted](https://overreacted.io/) site,
-there's a 'minutes to read' indicator next to each article.
-
-If the article takes less than 30 minutes to read:
-
-- For every 5 minutes (rounded up to the nearest 5), display a coffee cup emoji.
-  For example, if the article takes 3 minutes to read, you should display "☕️ 3
-  min read". If the article takes 7 minute, you should display "☕️☕️ 7 min
-  read".
-
-If the article takes 30 minutes or longer to read:
-
-- For every 10 minutes (rounded up to the nearest 10), display a bento box
-  emoji. For example, if the article takes 35 minutes to read, you should
-  display "🍱🍱🍱🍱 35 min read". If the article takes 61 minutes to read, you
-  should display "🍱🍱🍱🍱🍱🍱🍱 61 min read".
-
-There aren't tests for this feature, so you'll have to rely on running the code
-in the browser to see if your implementation works!
+- Built with **React**.
+- Uses **JSON Server** for the mock backend.
+- Manages state with `useState` and handles side effects with `useEffect`.

@@ -1,0 +1,47 @@
+{
+  "plants": [
+    {
+      "id": "1",
+      "name": "Aloe",
+      "image": "https://vignette.wikia.nocookie.net/plantsvszombies/images/c/c3/Aloe_Vera.png/revision/latest?cb=20161101004128",
+      "price": 15.99
+    },
+    {
+      "id": "2",
+      "name": "Snake Plant",
+      "image": "https://vignette.wikia.nocookie.net/plantsvszombies/images/1/1e/Snake_Plant.png/revision/latest?cb=20161101004128",
+      "price": 12.5
+    },
+    {
+      "id": "3",
+      "name": "Pothos",
+      "image": "https://vignette.wikia.nocookie.net/plantsvszombies/images/1/1e/Snake_Plant.png/revision/latest?cb=20161101004128",
+      "price": 10
+    },
+    {
+      "id": "4",
+      "name": "ZZ Plant",
+      "image": "https://vignette.wikia.nocookie.net/plantsvszombies/images/1/1e/Snake_Plant.png/revision/latest?cb=20161101004128",
+      "price": 18
+    },
+    {
+      "id": "5",
+      "name": "Jade Plant",
+      "image": "https://vignette.wikia.nocookie.net/plantsvszombies/images/1/1e/Snake_Plant.png/revision/latest?cb=20161101004128",
+      "price": 8.5
+    },
+    {
+      "id": "6",
+      "name": "Monstera Deliciosa",
+      "image": "https://vignette.wikia.nocookie.net/plantsvszombies/images/1/1e/Snake_Plant.png/revision/latest?cb=20161101004128",
+      "price": 25.99
+    },
+    {
+      "name": "Cactus",
+      "image": "cactus.jpg",
+      "price": 5.5,
+      "id": "QF5_QUZwFgM"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
